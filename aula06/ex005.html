@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciando Estudos Dom</title>
+    <style>
+        body {
+            background-color: aqua;
+            color: rgb(18, 47, 72);
+        }
+    </style>
+</head>
+<body>
+    <h1 id="tit">Entendendo o Dom</h1>
+    <p>Árvore Dom possui várias ramificações.</p>
+    <p>Aprendendo a usar o <strong>Dom</strong> em JavaScript.</p>
+    <div id = 'msg'>Click Aqui</div>
+    <script>
+       /* var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write(p1.innerText)
+        var d = document.getElementById('msg')
+        d.style.color ='green'
+        d.innerText ='Ola estou mexendo no Dom'
+        d.style.backgroundColor = 'blue'*/
+         var d = document.querySelector('div#msg')
+         d.style.background = 'white'
+
+         var h = document.getElementById('tit')
+         h.style.color = 'green'
+    </script>
+</body>
+</html>

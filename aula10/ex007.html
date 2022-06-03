@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Numeros</title>
+    <style>
+        body {
+            /* font: normal 18pt arial;
+            background: linear-gradient(-45deg, #034159, #025951, #02735E, #038C3E, #0CF25D) fixed;
+            animation: backgroundTransition 10s ease-in-out infinite;*/
+            height: 100vh;
+            width: 100vw;
+            background: linear-gradient(-45deg,  #034159, #025951, #02735E, #038C3E, #0CF25D);
+            background-size: 400% 400%;
+           
+            animation: backgroundTransition 20s ease-in-out infinite;
+            
+            
+        }
+            
+        @keyframes backgroundTransition {
+            0% {
+                background-position:  10% 80%;
+            }
+            50% {
+                background-position: 80% 100%;
+            }
+            100% {
+                background-position: 0% 90%;
+            }
+        }
+        #txtn1{
+            font: normal 18pt arial;
+            width: 200px;
+            height: 40px;
+            border-radius: 30px;
+            box-shadow: 5px 8px 5px black;
+            margin-top: 100px;
+            position: absolute;
+        }
+        #txtn2{
+            font: normal 18pt arial;
+            width: 200px;
+            height: 40px;
+            border-radius: 30px;
+            box-shadow: 5px 8px 5px black;
+            margin-top: 100px;
+            margin-left: 300px;
+            position: absolute;
+        }
+        #soma{
+            font: normal 18pt arial;
+            width: 100px;
+            height: 40px;
+            border-radius: 30px;
+            box-shadow: 5px 8px 5px black;
+            margin-top: 105px;
+            margin-left: 520px;
+            position: absolute;
+        }
+
+        #res {
+            position: absolute;
+            margin-top: 170px;
+            margin-left: 40px;
+            font-size: 2rem;
+        }
+        h1 {
+            font-size: 3rem;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="txtn1" id="txtn1">
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()" id="soma">
+    <div id="res">Resultado</div>
+    <script>
+        function somar() {
+            var tn1 = document.getElementById('txtn1')
+            var tn2 = document.querySelector('input#txtn2')
+            var n1 = Number.parseInt(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            var res = document.getElementById('res')
+            res.innerHTML = `A soma entre ${n1} e ${n2} é = ${s}`
+        }
+    </script>
+</body>
+</html>
