@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            background: linear-gradient(to right, rgb(96, 96, 195), rgb(32, 32, 93), rgb(4, 4, 45));
+        }
+        #paisN {
+            border-radius: 20px;
+            height: 20px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: rgb(116, 63, 164);">Teste de Nacionalidade</h1>
+    Digite o país que você nasceu: <input type="text" id="paisN">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="res"></div>
+
+    <script>
+        function verificar() {
+            var pais = document.getElementById('paisN')
+            var res = document.getElementById('res')
+            var nasc = (pais.value)
+            res.innerHTML = `<p>Você Nasceu no: ${nasc}</p>`
+                if(nasc == 'Brasil') { 
+                res.innerHTML += `Você é brasileiro!`
+                } else {
+                res.innerHTML += `Você é estrangeiro`
+                }
+        }
+        
+    </script>
+</body>
+</html>
