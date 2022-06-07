@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(12, 119, 119);
+    font: normal 15pt arial;
+}
+header {
+    color: white;
+    text-align: center;
+    
+}
+#msg {
+    padding: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+section {
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    margin: auto;
+    padding: 15px;
+    box-shadow: 10px 10px 10px black;
+    
+}
+footer {
+    color: white;
+    text-align: center;
+}
