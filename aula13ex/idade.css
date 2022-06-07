@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(151, 151, 208);
+}
+h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+section {
+    background-color: white;
+    border: 1px solid blue;
+    border-radius: 20px;
+    padding: 2px;
+    box-shadow: 10px 10px 10px rgba(17, 17, 94, 0.441);
+    max-width: 500px;
+    margin: auto;
+}
+div {
+    padding: 10px;
+}
+input {
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 255, 0.39);
+}
+footer {
+    text-align: center;
+}
+#img {
+    align-items: center;
+} 
