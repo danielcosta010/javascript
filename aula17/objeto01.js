@@ -8,4 +8,4 @@ let amigo = {
     }
 }
 amigo.engordar(5)
-console.log(`${amigo.nome} pesa agora ${amigo.peso} engordou `)
+console.log(`${amigo.nome} pesa agora ${amigo.peso} engordou `);
